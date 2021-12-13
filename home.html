@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simon Game</h1>
+      <div>
+        <button class="start">Start</button>
+        <button class="reset">Reset</button>
+        <span class="counter">0</span>
+      </div>
+    </header>
+    <main>
+      <div class="board">
+        <div class="board__section">
+          <div
+            class="board__color green--dark"
+            data-color="green"
+            data-num="1"
+          ></div>
+          <div
+            class="board__color red--dark"
+            data-num="2"
+            data-color="red"
+          ></div>
+        </div>
+
+        <div class="board__section">
+          <div
+            class="board__color yellow--dark"
+            data-num="3"
+            data-color="yellow"
+          ></div>
+          <div
+            class="board__color blue--dark"
+            data-num="4"
+            data-color="blue"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+*,
+*::before,
+*::after {
+  padding: none;
+  margin: none;
+  font-family: "Raleway"; }
+
+main {
+  max-width: 30rem;
+  margin: 0 auto; }
+
+header {
+  background-color: #111f44;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  header div {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff; }
+
+button {
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #36e662;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem; }
+
+.counter {
+  background-color: #36e662;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem; }
+
+.board {
+  background-color: #d3d0d0;
+  border-radius: 100%;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .board__section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .board__color {
+    width: 13rem;
+    height: 13rem; }
+
+h1 {
+  letter-spacing: 0.6rem;
+  font-weight: normal;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #fff; }
+
+.yellow {
+  background-color: #e6e956;
+  border-radius: 0 0 0 100%; }
+  .yellow--dark {
+    border-radius: 0 0 0 100%;
+    background-color: #909313; }
+
+.blue {
+  background-color: #4786e6;
+  border-radius: 0 0 100% 0; }
+  .blue--dark {
+    border-radius: 0 0 100% 0;
+    background-color: #123e82; }
+
+.red {
+  background-color: #ee4343;
+  border-radius: 0 100% 0 0; }
+  .red--dark {
+    border-radius: 0 100% 0 0;
+    background-color: #8b0d0d; }
+
+.green {
+  background-color: #36e662;
+  border-radius: 100% 0 0 0; }
+  .green--dark {
+    border-radius: 100% 0 0 0;
+    background-color: #0e7528; }
+
+@media only screen and (max-width: 850px) {
+  header {
+    flex-direction: column;
+    padding: 0.5rem 1rem; } }
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem; }
+  .board {
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem auto; }
+    .board__color {
+      width: 10rem;
+      height: 10rem; }
+  .start,
+  .reset,
+  .counter {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem; } }
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1rem; }
+  .board {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem auto; }
+    .board__color {
+      width: 6rem;
+      height: 6rem; } }
